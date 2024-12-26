@@ -1,0 +1,1583 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  overflow-x: hidden;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+.header-top_wraper {
+  padding: 0;
+  background: #390b2d;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 1200px) {
+  .header-top_wraper .costom-contianer {
+    max-width: 1230px;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .header-top_wraper .costom-contianer {
+    width: 992px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-top_wraper .costom-contianer {
+    max-width: 100%;
+  }
+}
+.header-top_wraper .header_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-top_wraper .header_wraper .header-left {
+  padding: 8px 0;
+}
+.header-top_wraper .header_wraper .header-left .logo {
+  width: 100%;
+  height: 100%;
+}
+.header-top_wraper .header_wraper .header-left .logo img {
+  width: 180px;
+  max-height: inherit;
+  min-height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 768px) {
+  .header-top_wraper .header_wraper .header-left .logo img {
+    width: 140px;
+  }
+}
+@media (max-width: 576px) {
+  .header-top_wraper .header_wraper .header-left .logo img {
+    width: 120px;
+  }
+}
+.header-top_wraper .header_wraper .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .btn-link {
+  background: #e87100 !important;
+  padding: 4px 16px !important;
+  border-radius: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .btn-link.active::before {
+  top: -100%;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .btn-link .icon-wraper {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .btn-link .icon-wraper .icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #e87100;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .btn-link .title {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content {
+  background: #350b2d !important;
+  z-index: -1;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-header {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid #0c010a;
+  padding-bottom: 4px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .formimage-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .formimage-wraper .model-form_logo {
+  width: auto;
+  max-width: 180px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-header .btn-close {
+  background: none;
+  opacity: 1;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-header .btn-close:hover {
+  opacity: 0.8;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-header .btn-close::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='m12 10.587l4.95-4.95l1.414 1.414l-4.95 4.95l4.95 4.95l-1.415 1.414l-4.95-4.95l-4.949 4.95l-1.414-1.415l4.95-4.95l-4.95-4.95L7.05 5.638z'/%3E%3C/svg%3E");
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .btn-close:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper {
+  padding: 14px;
+  margin: 0;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .content-wraper {
+  margin-bottom: 36px;
+  text-align: center;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .content-wraper .modal-content-title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  color: white;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .content-wraper .modal-content-descr {
+  margin-bottom: 2px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper {
+  margin-top: 10px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper ::-webkit-input-placeholder {
+  color: white !important;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper ::-moz-placeholder {
+  color: white !important;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper :-ms-input-placeholder {
+  color: white !important;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper ::-ms-input-placeholder {
+  color: white !important;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper ::placeholder {
+  color: white !important;
+  font-size: 13px;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper .form-control {
+  color: white !important;
+  border: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.17) !important;
+  background: transparent;
+  border-left: none !important;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper .input-group-text {
+  border: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.17) !important;
+  border-right: none !important;
+  background: rgba(255, 200, 39, 0.1) !important;
+  color: #ff7e02;
+  position: relative;
+}
+.header-top_wraper .header_wraper .header-right .btn-box .modal-content .modal-body .account-box_wraper .account-form_wraper .input-group_wraper .input-group-text::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 200, 39, 0.1);
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-clip-path: polygon(0 0, 0 100%, 42% 50%);
+          clip-path: polygon(0 0, 0 100%, 42% 50%);
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.45);
+  padding: 0 15px;
+}
+@media (max-width: 992px) {
+  .header-top_wraper .header_wraper .header-right .user-infor_wraper {
+    padding: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  .header-top_wraper .header_wraper .header-right .user-infor_wraper {
+    padding: 0 4px;
+  }
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper:last-child {
+  border-right: 0;
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper span {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .header-top_wraper .header_wraper .header-right .user-infor_wraper span {
+    font-size: 13px;
+  }
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper .setting-btn {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper .setting-btn:first-child:active {
+  border-color: transparent;
+}
+@media (max-width: 576px) {
+  .header-top_wraper .header_wraper .header-right .user-infor_wraper .setting-btn {
+    margin-right: 0 !important;
+  }
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper .setting-btn .seteting-image {
+  width: 32px;
+  height: auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-animation: fa-spin 2s linear infinite;
+          animation: fa-spin 2s linear infinite;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper .user_name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1px;
+}
+.header-top_wraper .header_wraper .header-right .user-infor_wraper .total-amnt {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-bottom {
+  background-color: #37072D;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .header-bottom .bottom-container {
+    max-width: 1400px;
+  }
+}
+.header-bottom .header-bottom_container {
+  padding: 0;
+}
+.header-bottom .header-bottom_container .theme-wraper {
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.header-bottom .header-bottom_container .theme-wraper::-webkit-scrollbar {
+  display: none;
+}
+.header-bottom .header-bottom_container .theme-wraper .theme-item {
+  display: inline-block;
+  width: 105px;
+  border-right: 1px solid rgba(0, 0, 0, 0.35);
+  margin-bottom: 10px;
+  padding: 10px 0 0 0;
+}
+.header-bottom .header-bottom_container .theme-wraper .theme-item .card-item {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  gap: 8px;
+}
+.header-bottom .header-bottom_container .theme-wraper .theme-item .card-item .image-wraper {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  line-height: inherit;
+}
+.header-bottom .header-bottom_container .theme-wraper .theme-item .card-item img {
+  height: 30px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.header-bottom .header-bottom_container .theme-wraper .theme-item .card-item .card-content {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  line-height: inherit;
+}
+
+@media only screen and (min-width: 320px) {
+  .costom-contianer {
+    width: 100%;
+  }
+}
+@media (max-width: 369px) {
+  .header-top_wraper .header_wraper .header-right .btn-box .btn-link {
+    padding: 4px 5px !important;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+.banner__section {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: #2e0327;
+  margin: 0;
+  padding: 0;
+}
+.banner__section .img-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.banner__section .img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.banner__section .swiper-pagination-bullet {
+  border: 1px solid #fff;
+  background: #3a082e !important;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-box-shadow: 0 0 4px 0 #fff, 3px 5px 16px 0 #fff;
+          box-shadow: 0 0 4px 0 #fff, 3px 5px 16px 0 #fff;
+  border-radius: 50% !important;
+  margin: 0 2px;
+  width: 12px !important;
+  height: 12px !important;
+}
+.banner__section .swiper-pagination-bullet-active {
+  background: #fe7e03 !important;
+}
+
+.multipleimage-section {
+  background-image: url("https://assets.cegbet.com/front-end/assets/images/banner/cegbackground.webp");
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.multipleimage-section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2e0327;
+  opacity: 0.75;
+}
+.multipleimage-section .slider-wraper {
+  padding: 28px 0;
+}
+.multipleimage-section .slider-wraper .slider-item {
+  padding: 0 12px;
+}
+.multipleimage-section .slider-wraper .slider-item .slider-link {
+  text-decoration: none;
+  color: black;
+  outline: none;
+  width: 100%;
+  display: block;
+}
+.multipleimage-section .slider-wraper .slider-item .slider-link img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.multipleimage-section .slick-prev,
+.multipleimage-section .slick-next {
+  -webkit-box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+          box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+  width: 50px !important;
+  height: 50px !important;
+  text-align: center;
+  line-height: 50px !important;
+  color: #fff !important;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+@media (max-width: 576px) {
+  .multipleimage-section .slick-prev,
+  .multipleimage-section .slick-next {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+.multipleimage-section .slick-prev:before,
+.multipleimage-section .slick-next:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m10 17l5-5l-5-5'/%3E%3C/svg%3E") !important;
+  position: absolute;
+  text-align: center;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+@media (max-width: 576px) {
+  .multipleimage-section .slick-prev:before,
+  .multipleimage-section .slick-next:before {
+    width: 20px;
+    height: 20px;
+  }
+}
+.multipleimage-section .slick-next {
+  right: -65px !important;
+}
+@media (max-width: 576px) {
+  .multipleimage-section .slick-next {
+    right: 0 !important;
+  }
+}
+.multipleimage-section .slick-prev {
+  left: -65px !important;
+}
+@media (max-width: 576px) {
+  .multipleimage-section .slick-prev {
+    left: 0 !important;
+  }
+}
+.multipleimage-section .slick-prev:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 8% !important;
+  top: 8% !important;
+}
+@media (max-width: 576px) {
+  .multipleimage-section .slick-prev:before {
+    left: 18% !important;
+    top: 18% !important;
+  }
+}
+
+.categories_section {
+  background-image: url("https://assets.cegbet.com/front-end/assets/images/banner/cegbackground.webp");
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  z-index: -1;
+  padding: 80px 0;
+}
+.categories_section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2e0327;
+  opacity: 0.75;
+  z-index: -1;
+}
+.categories_section .content-wraper {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+.categories_section .content-wraper .categories-title {
+  color: #ff7e02;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.categories_section .content-wraper .categories-text {
+  font-family: Poppins, sans-serif;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 200 !important;
+  letter-spacing: 1px;
+  color: white;
+}
+.categories_section .categories-item {
+  text-align: center;
+  border-radius: 10px;
+  background: #350b2d;
+  position: relative;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding: 7px !important;
+}
+.categories_section .categories-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("https://assets.cegbet.com/front-end/assets/images/game/shape.png");
+  border-radius: 10px;
+  z-index: -1;
+  overflow: hidden;
+}
+.categories_section .categories-item .categories-inner {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.categories_section .categories-item .categories-inner .categories-link {
+  border: 1px dotted #fff;
+  border-radius: 13px;
+  width: 100%;
+  color: #0e2a4e;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.categories_section .categories-item .categories-inner .categories-link .link-image {
+  width: 100%;
+  min-height: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 13px;
+}
+.categories_section .categories-item .ball-bg {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+          box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+  z-index: 2;
+}
+
+.topgame_section {
+  background-image: url("https://assets.cegbet.com/front-end/assets/images/banner/cegbackground.webp");
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  z-index: -2;
+  padding: 80px 0;
+}
+.topgame_section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2e0327;
+  opacity: 0.75;
+  z-index: -2;
+}
+.topgame_section .topgame-content_wraper {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+.topgame_section .topgame-content_wraper .topgame-title {
+  color: #ff7e02;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.topgame_section .topgame-content_wraper .topgame-text {
+  font-family: Poppins, sans-serif;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 200 !important;
+  letter-spacing: 1px;
+  color: white;
+}
+.topgame_section .topgame-item {
+  text-align: center;
+  border-radius: 10px;
+  background: #350b2d;
+  position: relative;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding: 7px !important;
+  z-index: -1;
+}
+.topgame_section .topgame-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("https://assets.cegbet.com/front-end/assets/images/game/shape.png");
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+.topgame_section .topgame-item .topgame-inner_part {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.topgame_section .topgame-item .topgame-inner_part .topgame-link {
+  width: 100%;
+  border: 1px dotted #fff;
+  border-radius: 13px;
+  color: #0e2a4e;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.topgame_section .topgame-item .topgame-inner_part .topgame-link .topgame-image_link {
+  width: 100%;
+  min-height: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  border-radius: 13px;
+}
+.topgame_section .topgame-item .topgame-bg_container {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+          box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+}
+.topgame_section .topgame-item .card-info {
+  padding: 12px 8px 8px 8px;
+  text-align: start;
+  position: relative;
+}
+.topgame_section .topgame-item .card-info .cardinfo-title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.topgame_section .topgame-item .card-info .price-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: #c2bdb2;
+}
+.topgame_section .topgame-item .card-info .price-wraper .max-price {
+  display: inline-block;
+  line-height: 1.7;
+  font-size: 12px;
+  color: #c2bdb2;
+  text-align: start;
+}
+
+.endorsements_section {
+  background-image: url("https://assets.cegbet.com/front-end/assets/images/banner/cegbackground.webp");
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  z-index: -1;
+  padding: 80px 0;
+}
+@media (max-width: 576px) {
+  .endorsements_section {
+    padding: 55px 0;
+  }
+}
+.endorsements_section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2e0327;
+  opacity: 0.75;
+  z-index: -1;
+}
+.endorsements_section .description_wraper {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+@media (max-width: 576px) {
+  .endorsements_section .description_wraper {
+    margin-bottom: 28px;
+  }
+}
+.endorsements_section .description_wraper .title-text {
+  color: #ff7e02;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+  .endorsements_section .description_wraper .title-text {
+    margin-bottom: 8px;
+  }
+}
+.endorsements_section .description_wraper .description-text {
+  font-family: Poppins, sans-serif;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 200 !important;
+  letter-spacing: 1px;
+  color: white;
+}
+@media (max-width: 576px) {
+  .endorsements_section .description_wraper .description-text {
+    font-size: 18px;
+  }
+}
+
+.populargame_section {
+  background-image: url("https://assets.cegbet.com/front-end/assets/images/how/bg2.jpg");
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  z-index: -2;
+  padding: 80px 0;
+}
+.populargame_section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2e0327;
+  opacity: 0.75;
+  z-index: -2;
+}
+.populargame_section .populargame-content_wraper {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+.populargame_section .populargame-content_wraper .popular-title {
+  color: #ff7e02;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.populargame_section .populargame-content_wraper .text-description {
+  font-family: Poppins, sans-serif;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 200 !important;
+  letter-spacing: 1px;
+  color: white;
+}
+.populargame_section .popular-card-item {
+  text-align: center;
+  border-radius: 10px;
+  background: #350b2d;
+  position: relative;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding: 7px !important;
+  z-index: -1;
+}
+.populargame_section .popular-card-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("https://assets.cegbet.com/front-end/assets/images/game/shape.png");
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+.populargame_section .popular-card-item .popular-card_inner {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.populargame_section .popular-card-item .popular-card_inner .popular-card_link {
+  width: 100%;
+  border: 1px dotted #fff;
+  border-radius: 13px;
+  color: #0e2a4e;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.populargame_section .popular-card-item .popular-card_inner .popular-card_link .popular-card_image {
+  width: 100%;
+  min-height: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  border-radius: 13px;
+}
+.populargame_section .popular-card-item .popular-card_ball {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+          box-shadow: -3.828px -3.828px 6px 0 rgba(255, 200, 39, 0.4), 3px 5px 8px 0 rgba(255, 82, 1, 0.2);
+}
+.populargame_section .popular-card-item .popular-card_info {
+  padding: 12px 8px 8px 8px;
+  text-align: start;
+  position: relative;
+}
+.populargame_section .popular-card-item .popular-card_info .cardinfo-title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.populargame_section .popular-card-item .popular-card_info .cardprice-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: #c2bdb2;
+}
+.populargame_section .popular-card-item .popular-card_info .cardprice-wraper .max_price {
+  display: inline-block;
+  line-height: 1.7;
+  font-size: 12px;
+  color: #c2bdb2;
+  text-align: start;
+}
+.populargame_section .slick-dots li {
+  margin: 0 3px;
+}
+.populargame_section .slick-dots li button {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+@media (max-width: 576px) {
+  .populargame_section .slick-dots li button {
+    width: 14px;
+    height: 14px;
+  }
+}
+.populargame_section .slick-dots li button:before {
+  font-size: 12px;
+  line-height: 22px;
+}
+@media (max-width: 576px) {
+  .populargame_section .slick-dots li button:before {
+    font-size: 8px;
+    line-height: 16px;
+    width: 14px;
+    height: 14px;
+  }
+}
+.populargame_section .slick-dots li button:hover,
+.populargame_section .slick-dots li button:focus {
+  color: none;
+}
+.populargame_section .slick-dots li.slick-active button:before {
+  color: orange;
+}
+
+.tutorials_section {
+  background: #350B2D;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+.tutorials_section .title-section {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 15px !important;
+  margin: 0;
+  line-height: 1.4;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+.tutorials_section .button-model-wraper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tutorials_section .button-model-wraper .button-item-wraper {
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+.tutorials_section .button-model-wraper .button-item-wraper::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.tutorials_section .button-model-wraper .button-item-wraper::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 50%;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item {
+  display: inline-block;
+  border-right: 1px solid rgba(0, 0, 0, 0.35);
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .fademodel-btn {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: inherit;
+  padding: 8px 16px !important;
+  background: #e87100;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #000;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .modal-header {
+  border-bottom: 1px solid #0c010a;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .model-content-body_wraper {
+  background: #350b2d;
+  border-radius: 0;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .model-content-body_wraper .content-title {
+  color: white;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .model-content-body_wraper .video-container {
+  aspect-ratio: 2/2;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .model-content-body_wraper .modal-header .cancelbutton-close {
+  background: none !important;
+  position: relative;
+}
+.tutorials_section .button-model-wraper .button-item-wraper .button-item .model-content-body_wraper .modal-header .cancelbutton-close .cancelbutton-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  color: white;
+}
+.tutorials_section .game-provider-lgo_wraper {
+  padding: 50px 0;
+}
+.tutorials_section .game-provider-lgo_wraper .gaming-title {
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  display: none;
+}
+@media (max-width: 576px) {
+  .tutorials_section .game-provider-lgo_wraper .gaming-title {
+    display: block;
+  }
+}
+.tutorials_section .game-provider-lgo_wraper .game-provider-logo {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .tutorials_section .game-provider-lgo_wraper .game-provider-logo {
+    margin-bottom: 2px;
+  }
+}
+.tutorials_section .game-provider-lgo_wraper .game-provider-logo .provider-logo_link {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.tutorials_section .game-provider-lgo_wraper .game-provider-logo .provider-logo_link .image-wraper {
+  padding: 10px;
+  width: auto;
+  max-width: 150px;
+  border: 1px solid #2a0a24;
+}
+@media (max-width: 576px) {
+  .tutorials_section .game-provider-lgo_wraper .game-provider-logo .provider-logo_link .image-wraper {
+    max-width: 100px;
+  }
+}
+.tutorials_section .game-provider-lgo_wraper .sm-toggle_btn {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 22px;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
+  transition: all 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 576px) {
+  .tutorials_section .game-provider-lgo_wraper .sm-toggle_btn {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.tutorials_section .game-provider-lgo_wraper .sm-toggle_btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 100px;
+  z-index: -1;
+}
+.tutorials_section .companypayment-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 46px;
+}
+@media (max-width: 576px) {
+  .tutorials_section .companypayment-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.tutorials_section .companypayment-section .company-block {
+  display: block;
+}
+@media (max-width: 576px) {
+  .tutorials_section .companypayment-section .company-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.tutorials_section .companypayment-section .company-block .title-company {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  display: inline-block;
+  line-height: 1.7;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Poppins, sans-serif;
+}
+.tutorials_section .companypayment-section .company-block .img-block_wraper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tutorials_section .companypayment-section .company-block .img-block_wraper img {
+  width: auto;
+  max-width: 80px;
+  height: auto;
+}
+.tutorials_section .companypayment-section .payment-block {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .tutorials_section .companypayment-section .payment-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.tutorials_section .companypayment-section .payment-block .payment-title {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  line-height: 1.7;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Poppins, sans-serif;
+}
+.tutorials_section .companypayment-section .payment-block .img-block-payment .payment-image {
+  display: inline;
+  width: auto;
+  max-width: 50px;
+  height: auto;
+  margin-right: 5px;
+}
+@media (max-width: 576px) {
+  .tutorials_section .companypayment-section .payment-block .img-block-payment .payment-image {
+    max-width: 28px;
+  }
+}
+
+.footer-section {
+  background: url("https://assets.cegbet.com/front-end/assets/images/footer/bg.jpg");
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  z-index: -2;
+  padding: 40px 0 35px;
+}
+.footer-section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  background: #2e0327;
+  opacity: 0.75;
+}
+.footer-section .footer-top {
+  margin: 0;
+  padding: 0;
+}
+.footer-section .footer-top .footer-top_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .footer-section .footer-top .footer-top_wraper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.footer-section .footer-top .footer-top_wraper .footer-logo {
+  margin-bottom: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .footer-top_wraper .footer-logo {
+    display: block;
+  }
+}
+.footer-section .footer-top .footer-top_wraper .footer-logo .footer-logo_link {
+  text-decoration: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.footer-section .footer-top .footer-top_wraper .footer-logo .footer-logo_link img {
+  max-height: 50px;
+  min-height: auto;
+  margin-bottom: 10px;
+  width: auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.footer-section .footer-top .footer-top_wraper .footer-logo .res-gambling {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: white;
+  display: -webkit-inline-box;
+}
+.footer-section .footer-top .footer-top_wraper .footer-logo .res-gambling img {
+  min-height: inherit;
+  max-height: 30px;
+  margin-left: 5px;
+  width: auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.footer-section .footer-top .footer-top_wraper .footer-top_link_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .footer-top_wraper .footer-top_link_wraper {
+    padding-left: 0;
+    margin-bottom: 2px;
+  }
+}
+.footer-section .footer-top .footer-top_wraper .footer-top_link_wraper .top-link_items {
+  padding: 3px 10px;
+  list-style: none;
+}
+.footer-section .footer-top .footer-top_wraper .footer-top_link_wraper .top-link_items .top_link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  line-height: 1.7;
+  font-family: Poppins, sans-serif;
+}
+@media (max-width: 576px) {
+  .footer-section .footer-top .footer-top_wraper .footer-top_link_wraper .top-link_items .top_link {
+    font-size: 12px;
+  }
+}
+.footer-section .footer-bottom {
+  padding-top: 25px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 200, 39, 0.1);
+  position: relative;
+}
+@media (max-width: 576px) {
+  .footer-section .footer-bottom {
+    padding-top: 8px;
+    margin-top: 0;
+  }
+}
+.footer-section .footer-bottom .footer-bootm_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.footer-section .footer-bottom .footer-bootm_wraper .copyright-text {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+@media (max-width: 598px) {
+  .multipleimage-section .slider-wraper .slider-item .slider-link img {
+    width: 185px;
+    height: auto;
+  }
+}/*# sourceMappingURL=home.css.map */

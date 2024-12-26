@@ -1,0 +1,50 @@
+@mixin mediaLink {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #285da1;
+    border-radius: 6px;
+    color: $white;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease-out 0s;
+  }
+    @mixin section_title {
+      font-size: $xxl-title-font;
+      font-weight: $fw-bold;
+      margin-bottom: 15px;
+      color: black;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    @mixin section_text{
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 30px;
+      letter-spacing: 0.003em;
+      color: black;
+     vertical-align: middle;
+    }
+    // for btn
+@mixin btn-button{
+  display: inline-block;
+    color: white;
+    background: #5f3afc;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 26px;
+    border: none;
+    padding: 6px 25px;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 1;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.219);
+}
+  

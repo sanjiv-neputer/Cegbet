@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import  "bootstrap/dist/css/bootstrap.min.css"
-import '@/public/assets/sass/common.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/public/assets/sass/common.css";
 import Header from "@/components/Header";
 import Bootstrapjs from "@/components/Bootstrapjs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,16 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     
       <body
-        
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Bootstrapjs/>
-         <Header/>
-   
+        <Bootstrapjs />
+        <Header />
+
         {children}
-        <header/>
+        <header />
       </body>
     </html>
   );

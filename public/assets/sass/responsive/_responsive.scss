@@ -11,17 +11,16 @@ $mac: 992px;
 $laptop: 1200px;
 
 // Extra large devices
-@mixin laptop-up{
+@mixin laptop-up {
   @media (min-width: #{$laptop}) {
     @content;
   }
 }
 
-
-@mixin laptop-down{
- @media (max-width: #{$laptop}) {
-   @content;
- }
+@mixin laptop-down {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
 }
 
 // Large devices

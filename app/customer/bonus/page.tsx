@@ -1,18 +1,18 @@
 "use client"
-import "@/public/assets/sass/pages/dashboard.css"
+import "@/public/assets/sass/pages/bonus.css"
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Headerbottom from "@/components/headerbottom/page";
 import Footer from "@/components/headerbottom/footer/page";
 
-export default function Dashboard(){
+export default function Bonus(){
     return(
-        <>
-         <Headerbottom/>
+     <>
+  <Headerbottom/>
           <section className="inner-banner_wrapper">
             <div className="container">
                 <div className="row justify-center">
                   <div className="col-lg-7 col-xl-6 text-lg-center flex justify-between lg:justify-center items-center z-10">
-                        <h2 className="title text-[18px] sm:text-[28px] font-normal text-white">Dashboard</h2>
+                        <h2 className="title text-[18px] sm:text-[28px] font-normal text-white">Bonus List</h2>
                       <div className="user-toggler  d-lg-none">        
                     <a
                      href=""
@@ -69,37 +69,11 @@ export default function Dashboard(){
                   </div>
                   </div>
                   <div className="col-lg-9 col-md-8 z-10">
-                    <div className="row payment-details_wraper">
-                    <div className="col-lg-6 col-xl-3 col-md-6 col-sm-10 dashboard-card_wraper">
-                         <div className="dashborad-card-content">
-                            <h1 className="price">Rs 0000</h1>
-                            <p className="info">TOTAL DEPOSIT</p>
-                         </div>
-                         <div className="dashboard-card_iocn">
-                         <Icon icon="la:wallet" width="20" height="20"  style={{color: '#fff'}} />
-                         </div>
-                       </div>
-                       <div className="col-lg-6 col-xl-4 col-md-6 col-sm-10 dashboard-card_wraper">
-                         <div className="dashborad-card-content">
-                            <h1 className="price">Rs 0000</h1>
-                            <p className="info">TOTAL WITHDRAW</p>
-                         </div>
-                         <div className="dashboard-card_iocn">
-                         <Icon icon="la:money-check" width="20" height="20"  style={{color: '#fff'}} />
-                         </div>
-                       </div>
-                       <div className="col-lg-6 col-xl-4 col-md-6 col-sm-10 dashboard-card_wraper">
-                         <div className="dashborad-card-content">
-                            <h1 className="price">Rs 0000</h1>
-                            <p className="info">TOTAL BONUS</p>
-                         </div>
-                         <div className="dashboard-card_iocn">
-                         <Icon icon="la:wallet" width="20" height="20"  style={{color: '#fff'}} />
-                         </div>
-                       </div>
-
-                    </div>
-                    <div className="user-info-table_wraper">
+                    <div className="bonus-request_wraper">
+                        <div className="request-section flex justify-between align-center gap-2">
+                            <h5 className="m-0 mt-[-3px] leading-[1.4] text-white font-poppins text-[20px] font-medium">Bonus Request </h5>
+                        </div>
+                        <div className="user-info-table_wraper">
                     <div className="search-section">
                        <div className="data-table_lenght">
                         <label htmlFor="total-data">Show 
@@ -121,53 +95,19 @@ export default function Dashboard(){
                        <thead>
                        <tr>
                            <th>SN</th>
-                           <th>Transaction ID</th>
-                           <th>Game</th>
-                           <th>Stake</th>                   
-                           <th>Win</th>
-                           <th>Date</th>
-                         </tr>
-                         {/* <tr>
-                           <th>SN</th>
                            <th>Amount</th>
-                           <th>Transaction ID</th>
-                           <th>Account info</th>
-                           <th>Status</th>                   
-                           <th>Date</th>
-                           <th>Bonus</th>
-                         </tr> */}
+                           <th>Requested Date</th>
+                           <th>status</th>                   
+                           <th>Approved Date</th>
+                           <th>Remark</th>
+                         </tr>
+                        
                        </thead>
                      <tbody>
                         <tr>
                             <td valign="top" colSpan={6} className="datatable-empty">No data available in table</td>
                         </tr>
-                         {/* <tr>
-                           <td>1</td>
-                           <td>1,000.00</td>
-                           <td>#34343</td>
-                           <td>
-                             <div className="account-list-details">
-                                <p className="details">Bank Name: 
-                                    <span className="text-red-500 ml-[4px]">CG Bank</span>
-                                </p>
-                                <p className="details">Account Name: 
-                                    <span className="text-red-500 ml-[4px]">CG Default Bank</span>
-                                </p>
-                                <p className="details">Account Number: 
-                                    <span className="text-red-500 ml-[4px]">1234678099</span>
-                                </p>
-                                <p className="details">Branch: 
-                                    <span className="text-red-500 ml-[4px]">Default Branch</span>
-                                </p>
-                                <p className="details">Type: 
-                                    <span className="text-red-500 ml-[4px]">Bank</span>
-                                </p>
-                             </div>
-                           </td>
-                           <td>Sucess</td>
-                           <td>03 jan,2025 at 12:26 PM</td>
-                           <td>-</td>
-                         </tr> */}
+                         
                         </tbody>
                      </table>
                      <div className="table-footer-entries">
@@ -188,11 +128,13 @@ export default function Dashboard(){
                       </ul>
                      </div>
                     </div>
+                    </div>
                   </div>
                 </div>
             </div>
           </div>
          <Footer/>
-        </>
+     </>
     )
+    
 }
